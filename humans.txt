@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    <William Humphreys-Cloutier> -- <Developper> -- <@yesitswill>
+
+# THANKS
+
+    <Ethan Schoonover>
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery, Modernizr

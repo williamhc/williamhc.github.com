@@ -1,0 +1,46 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/0.8.17/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'cabal' ]
+2 info using npm@1.2.0
+3 info using node@v0.8.17
+4 verbose read json /Users/williamhumphreys-cloutier/Dropbox/Projects/williamhc.github.com/package.json
+5 verbose read json /Users/williamhumphreys-cloutier/Dropbox/Projects/williamhc.github.com/node_modules/less/package.json
+6 verbose read json /Users/williamhumphreys-cloutier/Dropbox/Projects/williamhc.github.com/package.json
+7 verbose cache add [ 'cabal', null ]
+8 silly cache add name=undefined spec="cabal" args=["cabal",null]
+9 verbose parsed url { pathname: 'cabal', path: 'cabal', href: 'cabal' }
+10 silly lockFile d041a597-cabal cabal
+11 verbose lock cabal /Users/williamhumphreys-cloutier/.npm/d041a597-cabal.lock
+12 silly lockFile d041a597-cabal cabal
+13 verbose addNamed [ 'cabal', '' ]
+14 verbose addNamed [ null, '' ]
+15 silly lockFile 32b7e0ac-cabal cabal@
+16 verbose lock cabal@ /Users/williamhumphreys-cloutier/.npm/32b7e0ac-cabal.lock
+17 silly addNameRange { name: 'cabal', range: '', hasData: false }
+18 verbose url raw cabal
+19 verbose url resolving [ 'https://registry.npmjs.org/', './cabal' ]
+20 verbose url resolved https://registry.npmjs.org/cabal
+21 info trying registry request attempt 1 at 20:58:03
+22 http GET https://registry.npmjs.org/cabal
+23 http 404 https://registry.npmjs.org/cabal
+24 silly registry.get cb [ 404,
+24 silly registry.get   { server: 'CouchDB/1.2.1 (Erlang OTP/R15B)',
+24 silly registry.get     date: 'Sun, 10 Feb 2013 01:56:07 GMT',
+24 silly registry.get     'content-type': 'application/json',
+24 silly registry.get     'content-length': '52',
+24 silly registry.get     'cache-control': 'must-revalidate' } ]
+25 silly lockFile 32b7e0ac-cabal cabal@
+26 error 404 'cabal' is not in the npm registry.
+26 error 404 You should bug the author to publish it
+26 error 404
+26 error 404 Note that you can also install from a
+26 error 404 tarball, folder, or http url, or git url.
+27 error System Darwin 12.2.0
+28 error command "/usr/local/Cellar/node/0.8.17/bin/node" "/usr/local/bin/npm" "install" "cabal"
+29 error cwd /Users/williamhumphreys-cloutier/Dropbox/Projects/williamhc.github.com
+30 error node -v v0.8.17
+31 error npm -v 1.2.0
+32 error code E404
+33 verbose exit [ 1, true ]
