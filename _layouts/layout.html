@@ -4,46 +4,68 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="author" content="William Humphreys-Cloutier" />
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/font-awesome.min.css">
-    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <title>WHC - {{ page.title }}</title>
   </head>
   <body>
     <div class="container-fluid">
-      <div class="span4 sidebar">
-        <h1 class="name">WHC</h3>
-        <div class ="subtitle blue">
-          <h2 class="about">cs student @umanitoba. co-op dev @500px.</h5>
+      <div class="row-fluid">
+        <div class="span3 sidebar">
+          <h1 class="name">
+            <a href="/">
+              WHC
+            </a>
+          </h1>
+          <div class ="subtitle blue">
+            <h2 class="about">studying cs <a href="http://www.umanitoba.ca">@umanitoba</a> and co-op dev <a href="http://www.500px.com">@500px</a>.</h5>
+          </div>
+          <ul class="links">
+            <li>
+              <h3>
+                <a href="/blog.html">blog</a>
+              </h3>
+            </li>
+            <li>
+              <h3>
+                <a href="/about">about</a>
+              </h3>
+            </li>
+            <li>
+              <h3>
+                <a href="/resume">resumé</a>
+              </h3>
+            </li>
+            <li>
+              <h3>
+                <a href="/internet">say hello</a>
+              </h3>
+            </li>
+          </ul>
         </div>
-        <ul class="links">
-          <li>
-            <h3>
-              <a href="/">blog</a>
-            </h3>
-          </li>
-          <li>
-            <h3>
-              <a href="/about">about</a>
-            </h3>
-          </li>
-          <li>
-            <h3>
-              <a href="/resume">resumé</a>
-            </h3>
-          </li>
-          <li>
-            <h3>
-              <a href="/internet">say hello</a>
-            </h3>
-          </li>
-        </ul>
-      </div>
-      <div class="span8 content">
-        <h3>{{ page.title }}</h3>
-        <section class="">
-          {{ content }}
-        </section>
+        <div class="span9 wrap">
+          <div class="row-fluid header">
+            <h2 class="page-title">
+              {% if page.date %}
+                {{ page.date | date: "%B %e, %Y"}}
+              {% else %}
+                {{ page.title }}
+              {% endif %}
+            </h2>
+            <div class="themr pull-right">
+              
+            </div>
+          </div>
+          <section class="content row-fluid offset1">
+            {{ content }}
+          </section>
+        </div>
       </div>
   </body>
+  <footer>
+    <script type="text/javascript" src="/js/vendor/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="/js/vendor/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+  </footer>
 </html>
