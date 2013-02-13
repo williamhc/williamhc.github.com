@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/font-awesome-corp.css">
+    <link rel="stylesheet" href="/css/font-awesome-ext.css">
+    <link rel="stylesheet" href="/css/font-awesome-social.css">
     <title>WHC - {{ page.title }}</title>
   </head>
   <body>
@@ -18,7 +21,7 @@
               WHC
             </a>
           </h1>
-          <div class ="subtitle blue">
+          <div class ="subtitle">
             <h2 class="about">studying cs <a href="http://www.umanitoba.ca">@umanitoba</a> and co-op dev <a href="http://www.500px.com">@500px</a>.</h5>
           </div>
           <ul class="links">
@@ -29,32 +32,57 @@
             </li>
             <li>
               <h3>
-                <a href="/about">about</a>
+                <a href="/#about">about</a>
               </h3>
             </li>
             <li>
               <h3>
-                <a href="/resume">resumé</a>
+                <a href="/#resume">resumé</a>
               </h3>
             </li>
             <li>
               <h3>
-                <a href="/internet">say hello</a>
+                <a href="/#internet">say hello</a>
               </h3>
             </li>
           </ul>
         </div>
         <div class="span9 wrap">
           <div class="row-fluid header">
-            <h2 class="page-title">
+            <h2 class="page-title span6 offset1">
               {% if page.date %}
                 {{ page.date | date: "%B %e, %Y"}}
               {% else %}
                 {{ page.title }}
               {% endif %}
             </h2>
-            <div class="themr pull-right">
-              
+            <div class="themr pull-right span1 offset3">
+              <div class="settings btn-group">
+                <button class="btn brightness-toggle">
+                  <i class="icon-adjust"></i>
+                </button>
+                <button class="btn dropdown-toggle" data-toggle="dropdown">
+                  <i class="icon-tint"></i>
+                </button>
+                <ul class="dropdown-menu color-picker">
+                  <li>
+                    <i class="icon-tint"></i>
+                  </li>
+                  <li>
+                    <i class="icon-tint"></i>
+                  </li>
+                  <li>
+                    <i class="icon-tint"></i>
+                  </li>
+                  <li>
+                    <i class="icon-tint"></i>
+                  </li>
+                  <li>
+                    <i class="icon-tint"></i>
+                  </li>
+                  
+                </ul>
+              </div> 
             </div>
           </div>
           <section class="content row-fluid offset1">

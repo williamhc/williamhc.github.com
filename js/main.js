@@ -5,4 +5,3 @@ $('.has-tooltip').tooltip({
       hide: 300
   }
 });
-
